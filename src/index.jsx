@@ -1,11 +1,10 @@
 // src/index.jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
-import AlertasMilhas from "./AlertasMilhas";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AlertasMilhas />
+    <App />
   </React.StrictMode>
 );
