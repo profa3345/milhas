@@ -1,0 +1,38 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "alerts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId",    "order": "ASCENDING"  },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "alerts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "active",    "order": "ASCENDING"  },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "fare_snapshots",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "origin",      "order": "ASCENDING"  },
+        { "fieldPath": "destination", "order": "ASCENDING"  },
+        { "fieldPath": "foundAt",     "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "alert_hits",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "alertId",    "order": "ASCENDING" },
+        { "fieldPath": "snapshotId", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
